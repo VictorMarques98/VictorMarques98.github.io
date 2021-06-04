@@ -11,15 +11,15 @@ $(document).ready(function() {
         message: 'This value is not valid',
         fields: {
             username: {
-                message: 'The username is not valid',
+                message: 'O nome não é válido',
                 validators: {
                     notEmpty: {
-                        message: 'The username is required and can\'t be empty'
+                        message: 'Campo nome não pode estar vazio'
                     },
                     stringLength: {
                         min: 6,
                         max: 30,
-                        message: 'The username must be more than 6 and less than 30 characters long'
+                        message: 'Campo nome deve conter entre 6 e 30 caracteres'
                     },
                     regexp: {
                         regexp: /^[a-zA-Z0-9_\.]+$/,
